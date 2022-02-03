@@ -1,0 +1,138 @@
+.background {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url("../../public/scene.svg");
+}
+
+.profiles {
+  width: 70%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 1rem;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrowUp {
+  position: relative;
+  transform: rotate(-90deg);
+  color: lightgray;
+}
+
+.grid_alter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.textLabel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(248, 248, 248);
+}
+
+.graphic {
+  width: 70%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 3rem;
+}
+
+/* mobile view */
+@media only screen and (max-width: 900px) {
+  .background {
+    background-image: url("../../public/scene.svg");
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profiles {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1rem;
+
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+  }
+
+  .grid_alter {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+  }
+
+  .textLabel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: rgb(248, 248, 248);
+  }
+
+  .graphic {
+    width: 90%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1rem;
+    padding-left: 1rem;
+
+    margin: 0;
+  }
+}

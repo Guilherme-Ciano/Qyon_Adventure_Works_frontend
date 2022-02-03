@@ -1,0 +1,114 @@
+.section_pista {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url("../../public/waves_w.svg");
+}
+
+.grid_container {
+  gap: 2rem !important;
+}
+
+.form_pista {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: rgb(124, 15, 175);
+  padding: 0.3rem;
+}
+
+.formGroup_pista {
+  width: 100%;
+  height: 100%;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+
+  border-radius: 12px;
+}
+
+.input {
+  width: 90%;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonSubmit {
+  width: 90%;
+  height: 2.2rem;
+  background: linear-gradient(45deg, #ff0099, #4c0080);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ease 1s;
+  color: white;
+
+  box-shadow: 0px 0px 10px #ff0099;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ff0099 !important;
+  color: black !important;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: black !important;
+  color: lightgray !important;
+}
+
+.img {
+  width: 100%;
+  height: 50%;
+
+  background-image: url("../../public/track.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+  .section_pista {
+    padding: 1rem;
+  }
+
+  .grid_container {
+    height: 80%;
+    grid-template-columns: 1fr;
+    align-items: baseline;
+  }
+
+  .img {
+    display: none;
+  }
+}
